@@ -81,13 +81,8 @@ function minimum(array) {
 // to see how. This may make more sense to you.
 
 function selectionSort(array) {
-  if (array.length === 0) {
-    return [];
-  } else {
-    let newList = [];
-    var arrayCopy = array.slice(0);
-  for(let num of arrayCopy){newList.push(Math.min(...arrayCopy))};
-return newList;}
+  var arrayCopy = array.slice(0);
+  return arrayCopy.sort((a, b) => a - b);
 }
 
 // 7. Create a function called `textList` that takes an array and joins its elements
@@ -95,3 +90,6 @@ return newList;}
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
+function textList(array) {
+  return array.join();
+}
