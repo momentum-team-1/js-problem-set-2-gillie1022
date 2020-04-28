@@ -22,30 +22,33 @@ function remove(array, member) {
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
-// function sum(array) {
-//   let total = 0;
-//   for (let item of array) {
-//     total += item;
-//   }
-//   return total;
-// }
-
-function sum (array){let sum=array.reduce((total, num) => total + num)} 
+function sum(array) {
+  let total = 0;
+  for (let item of array) {
+    total += item;
+  }
+  return total;
+}
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
 function average(array) {
-  let sum = 0;
-  let average = (sum / array.length)
-  for (let item of array) {
-    sum += item;
+  if (array.length ===0) {
+    return
+  } else {
+    let total = 0;
+    for (let item of array) {
+      total += item;
+    }
+    return total / array.length;
   }
-  return average;
 }
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+
+function minimum(array) {for ( let num of array){ if } }
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
